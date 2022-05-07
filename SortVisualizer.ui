@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SortVisualizerClass</class>
+ <widget class="QMainWindow" name="SortVisualizerClass">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>525</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sort Visualizer</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">alternate-background-color: rgb(150, 150, 150);</string>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOptions_2">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <widget class="QMenu" name="menuArray_type">
+     <property name="title">
+      <string>Array type</string>
+     </property>
+     <addaction name="actionRandom"/>
+     <addaction name="actionDecreasing_order"/>
+     <addaction name="actionSequential_order"/>
+    </widget>
+    <widget class="QMenu" name="menuNumber_of_elements">
+     <property name="title">
+      <string>Number of elements</string>
+     </property>
+     <addaction name="action50"/>
+     <addaction name="action100"/>
+     <addaction name="action200"/>
+     <addaction name="action500"/>
+    </widget>
+    <addaction name="menuArray_type"/>
+    <addaction name="menuNumber_of_elements"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Start</string>
+    </property>
+    <widget class="QMenu" name="menuQuick_Sort">
+     <property name="title">
+      <string>Quick Sort</string>
+     </property>
+     <addaction name="actionQuick_Sort_Left_Pivot"/>
+     <addaction name="actionQuick_Sort_Random_Pivot"/>
+    </widget>
+    <addaction name="actionInsertion_Sort"/>
+    <addaction name="actionMerge_Sort"/>
+    <addaction name="menuQuick_Sort"/>
+    <addaction name="actionRadix_Sort"/>
+   </widget>
+   <addaction name="menuOptions"/>
+   <addaction name="menuOptions_2"/>
+  </widget>
+  <action name="actionRandom">
+   <property name="text">
+    <string>Random</string>
+   </property>
+  </action>
+  <action name="actionDecreasing_order">
+   <property name="text">
+    <string>Decreasing order</string>
+   </property>
+  </action>
+  <action name="actionSequential_order">
+   <property name="text">
+    <string>Sequential order</string>
+   </property>
+  </action>
+  <action name="action50">
+   <property name="text">
+    <string>50</string>
+   </property>
+   <property name="toolTip">
+    <string>50</string>
+   </property>
+  </action>
+  <action name="action100">
+   <property name="text">
+    <string>100</string>
+   </property>
+   <property name="toolTip">
+    <string>100</string>
+   </property>
+  </action>
+  <action name="action200">
+   <property name="text">
+    <string>200</string>
+   </property>
+   <property name="toolTip">
+    <string>200</string>
+   </property>
+  </action>
+  <action name="action500">
+   <property name="text">
+    <string>500</string>
+   </property>
+   <property name="toolTip">
+    <string>500</string>
+   </property>
+  </action>
+  <action name="actionInsertion_Sort">
+   <property name="text">
+    <string>Insertion Sort</string>
+   </property>
+  </action>
+  <action name="actionMerge_Sort">
+   <property name="text">
+    <string>Merge Sort</string>
+   </property>
+  </action>
+  <action name="actionQuick_Sort_Left_Pivot">
+   <property name="text">
+    <string>Left Pivot</string>
+   </property>
+   <property name="toolTip">
+    <string>Quick Sort Left Pivot</string>
+   </property>
+  </action>
+  <action name="actionQuick_Sort_Random_Pivot">
+   <property name="text">
+    <string>Random Pivot</string>
+   </property>
+   <property name="toolTip">
+    <string>Quick Sort Random Pivot</string>
+   </property>
+  </action>
+  <action name="actionRadix_Sort">
+   <property name="text">
+    <string>Radix Sort</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="SortVisualizer.qrc"/>
+ </resources>
+ <connections/>
+</ui>
