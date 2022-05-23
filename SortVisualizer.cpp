@@ -1,4 +1,5 @@
 #include "SortVisualizer.h"
+#include "BubbleSort.h"
 #include "InsertionSort.h"
 #include "MergeSort.h"
 #include "QuickSort.h"
@@ -72,6 +73,21 @@ void SortVisualizer::on_action500_triggered() {
     setWindowTitle("Sort Visualizer");
 
     algo->InitializeNums(500);
+
+}
+
+void SortVisualizer::on_actionBubble_Sort_triggered() {
+
+    menuBar()->setEnabled(false);
+    setWindowTitle("Bubble Sort");
+
+    auto sortAlgo = static_cast<BubbleSort*>(algo);
+    sortAlgo->Sort();
+
+    update();
+
+    setWindowTitle("Bubble Sort - Finished");
+    menuBar()->setEnabled(true);
 
 }
 

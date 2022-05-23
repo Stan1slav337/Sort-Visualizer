@@ -27,6 +27,7 @@ private slots:
     void on_action200_triggered();
     void on_action500_triggered();
 
+    void on_actionBubble_Sort_triggered();
     void on_actionInsertion_Sort_triggered();
     void on_actionMerge_Sort_triggered();
     void on_actionQuick_Sort_Left_Pivot_triggered();
