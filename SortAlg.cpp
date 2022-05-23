@@ -37,7 +37,7 @@ void SortAlg::showElems() {
         painter.setBrush(nums[i]->isActive() ? ACTIVE_NUM_COLOR : NUM_COLOR);
         painter.setPen(pen);
 
-        painter.drawRect(nums[i]->getRect());
+        painter.drawRect(*nums[i]);
 
     }
 
@@ -45,8 +45,8 @@ void SortAlg::showElems() {
 
 void SortAlg::swapElems(size_t i, size_t j) {
 
-    size_t aux = nums[i]->getTop();
-    nums[i]->setTop(nums[j]->getTop());
+    size_t aux = nums[i]->top();
+    nums[i]->setTop(nums[j]->top());
     nums[j]->setTop(aux);
 
 }

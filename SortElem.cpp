@@ -2,45 +2,19 @@
 
 Elem::Elem() {
 
-	rect = QRect(0, 0, -1, -1);
 	active = false;
 
 }
 
-Elem::Elem(int x, int y, int height, int width) {
+Elem::Elem(int x, int y, int height, int width) : QRect(x, y, height, width) {
 
-	rect = QRect(x, y, height, width);
 	active = false;
-
-}
-
-QRect Elem::getRect() const noexcept {
-
-	return rect;
-
-}
-
-int Elem::getTop() const noexcept {
-
-	return rect.top();
-
-}
-
-int Elem::getHeight() const noexcept {
-
-	return rect.height();
 
 }
 
 bool Elem::isActive() const noexcept {
 
 	return active;
-
-}
-
-void Elem::setTop(int h) noexcept {
-
-	rect.setTop(h);
 
 }
 
@@ -61,7 +35,7 @@ Elem& Elem::operator=(const Elem& el) {
 	if (&el == this) 
 		return *this;
 	
-	this->setTop(el.getTop());
+	setTop(el.top());
 
 	return *this;
 
@@ -69,13 +43,13 @@ Elem& Elem::operator=(const Elem& el) {
 
 bool operator < (const Elem& el1, const Elem& el2) noexcept {
 
-	return el1.getHeight() < el2.getHeight();
+	return el1.height() < el2.height();
 
 }
 
 bool operator <= (const Elem& el1, const Elem& el2) noexcept {
 
-	return el1.getHeight() <= el2.getHeight();
+	return el1.height() <= el2.height();
 
 }
 

@@ -5,7 +5,7 @@ void RadixSort::Sort() {
 
     int max = (*max_element(nums.begin(), nums.end(), [](Elem* el1, Elem* el2) {
             return *el1 < *el2;
-        }))->getRect().height();
+        }))->height();
 
 	for (int exp = 1; max / exp > 0; exp *= 10)
 		countSort(exp);
@@ -23,7 +23,7 @@ void RadixSort::countSort(int exp) {
 
         accesVisual({ i });
 
-        count[(nums[i]->getHeight() / exp) % 10]++;
+        count[(nums[i]->height() / exp) % 10]++;
 
     }
 
@@ -34,8 +34,8 @@ void RadixSort::countSort(int exp) {
 
         accesVisual({ i });
 
-        out[count[(nums[i]->getHeight() / exp) % 10] - 1] = *nums[i];
-        count[(nums[i]->getHeight() / exp) % 10]--;
+        out[count[(nums[i]->height() / exp) % 10] - 1] = *nums[i];
+        count[(nums[i]->height() / exp) % 10]--;
 
     }
 
