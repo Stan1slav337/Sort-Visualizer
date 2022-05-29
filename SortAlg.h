@@ -38,5 +38,6 @@ public:
 	void RandomShuffle();
 	void DecreasingOrder();
 	void SequentialOrder();
+	void AlmostShuffle();
 
 };

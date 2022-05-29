@@ -9,6 +9,7 @@ constexpr auto MENU_HEIGHT = 25;
 constexpr auto WINDOW_WIDTH = 1000;
 constexpr auto WINDOW_HEIGHT = 500;
 constexpr auto DEFAULT_N = 100;
+constexpr auto ALMOST_N = 5;
 constexpr auto NUM_COLOR = Qt::darkCyan;
 constexpr auto ACTIVE_NUM_COLOR = Qt::cyan;
 
@@ -21,6 +22,7 @@ private slots:
     void on_actionRandom_triggered();
     void on_actionDecreasing_order_triggered();
     void on_actionSequential_order_triggered();
+    void on_actionAlmost_sorted_triggered();
 
     void on_action50_triggered();
     void on_action100_triggered();

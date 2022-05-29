@@ -47,6 +47,7 @@
      <addaction name="actionRandom"/>
      <addaction name="actionDecreasing_order"/>
      <addaction name="actionSequential_order"/>
+     <addaction name="actionAlmost_sorted"/>
     </widget>
     <widget class="QMenu" name="menuNumber_of_elements">
      <property name="title">
@@ -167,6 +168,11 @@
   <action name="actionHeap_Sort">
    <property name="text">
     <string>Heap Sort</string>
+   </property>
+  </action>
+  <action name="actionAlmost_sorted">
+   <property name="text">
+    <string>Almost sorted</string>
    </property>
   </action>
  </widget>

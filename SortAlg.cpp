@@ -173,3 +173,18 @@ void SortAlg::SequentialOrder() {
     visual->update();
 
 }
+
+void SortAlg::AlmostShuffle() {
+
+    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    auto rnd = std::default_random_engine(seed);
+
+    const size_t LEN = nums.size();
+    InitializeNums(LEN);
+
+    for (size_t i = 0; i < ALMOST_N; ++i)
+        swapElems(rnd() % LEN, rnd() % LEN);
+
+    visual->update();
+
+}

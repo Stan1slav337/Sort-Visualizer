@@ -45,6 +45,14 @@ void SortVisualizer::on_actionSequential_order_triggered() {
 
 }
 
+void SortVisualizer::on_actionAlmost_sorted_triggered() {
+
+    setWindowTitle("Sort Visualizer");
+
+    algo->AlmostShuffle();
+
+}
+
 void SortVisualizer::on_action50_triggered() {
 
     setWindowTitle("Sort Visualizer");
