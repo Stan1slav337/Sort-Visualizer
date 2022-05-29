@@ -33,6 +33,7 @@ private slots:
     void on_actionQuick_Sort_Left_Pivot_triggered();
     void on_actionQuick_Sort_Random_Pivot_triggered();
     void on_actionRadix_Sort_triggered();
+    void on_actionHeap_Sort_triggered();
     
 private:
 

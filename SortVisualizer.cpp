@@ -168,6 +168,18 @@ void SortVisualizer::on_actionRadix_Sort_triggered() {
 
 }
 
+void SortVisualizer::on_actionHeap_Sort_triggered() {
+
+    menuBar()->setEnabled(false);
+    setWindowTitle("Heap Sort");
+
+    update();
+
+    setWindowTitle("Heap Sort - Finished");
+    menuBar()->setEnabled(true);
+
+}
+
 void SortVisualizer::delay() const noexcept {
 
     QApplication::processEvents();

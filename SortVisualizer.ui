@@ -76,6 +76,7 @@
     <addaction name="actionMerge_Sort"/>
     <addaction name="menuQuick_Sort"/>
     <addaction name="actionRadix_Sort"/>
+    <addaction name="actionHeap_Sort"/>
    </widget>
    <addaction name="menuOptions"/>
    <addaction name="menuOptions_2"/>
@@ -161,6 +162,11 @@
   <action name="actionBubble_Sort">
    <property name="text">
     <string>Bubble Sort</string>
+   </property>
+  </action>
+  <action name="actionHeap_Sort">
+   <property name="text">
+    <string>Heap Sort</string>
    </property>
   </action>
  </widget>
