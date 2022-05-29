@@ -94,6 +94,7 @@
     <QtUic Include="SortVisualizer.ui" />
     <QtMoc Include="SortVisualizer.h" />
     <ClCompile Include="BubbleSort.cpp" />
+    <ClCompile Include="HeapSort.cpp" />
     <ClCompile Include="InsertionSort.cpp" />
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="QuickSort.cpp" />
@@ -105,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="HeapSort.h" />
     <ClInclude Include="InsertionSort.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="QuickSort.h" />

@@ -4,6 +4,7 @@
 #include "MergeSort.h"
 #include "QuickSort.h"
 #include "RadixSort.h"
+#include "HeapSort.h"
 
 SortVisualizer::SortVisualizer(QWidget *parent) : QMainWindow(parent) {
 
@@ -172,6 +173,9 @@ void SortVisualizer::on_actionHeap_Sort_triggered() {
 
     menuBar()->setEnabled(false);
     setWindowTitle("Heap Sort");
+
+    auto sortAlgo = static_cast<HeapSort*>(algo);
+    sortAlgo->Sort();
 
     update();
 
